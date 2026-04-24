@@ -4,6 +4,13 @@ This file is the repository entrypoint for coding agents.
 
 Keep this file short. Treat it as a table of contents, not the full knowledge base.
 
+Framework constraints:
+
+- keep this file at repository root
+- keep durable knowledge under `docs/`
+- do not create top-level `.ai/`
+- do not create top-level `.codex/`
+
 ## Read Order
 
 For most tasks, read in this order:

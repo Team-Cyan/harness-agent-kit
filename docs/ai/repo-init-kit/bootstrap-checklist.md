@@ -15,6 +15,8 @@ Use that choice to decide how much of the kit to apply on day one.
 - [ ] Add root `AGENTS.md`
 - [ ] Add `docs/ai/project-overview.md`
 - [ ] Add `docs/roadmap.md`
+- [ ] Confirm there is no top-level `.ai/`
+- [ ] Confirm there is no top-level `.codex/`
 
 ## Phase 2: Shared Knowledge Base
 
@@ -33,13 +35,16 @@ Use that choice to decide how much of the kit to apply on day one.
 - [ ] Include read order
 - [ ] Include only high-signal repo rules
 - [ ] Do not dump the whole architecture into it
+- [ ] Keep `AGENTS.md` at repo root, not inside `.codex/`
 
 ## Knowledge Base Rules
 
 - [ ] Keep AI-facing docs in English
+- [ ] Keep durable knowledge inside `docs/`
 - [ ] Organize by module
 - [ ] Keep roadmap separate from specs and plans
 - [ ] Record external references with notes on what to borrow and what not to copy
+- [ ] Do not create top-level `.ai/` or `.codex/` knowledge folders
 
 ## Session Workflow Rules
 

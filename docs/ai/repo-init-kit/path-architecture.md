@@ -1,5 +1,12 @@
 # Path Architecture
 
+## Mandatory Rules
+
+- `AGENTS.md` lives at the repository root.
+- Durable agent knowledge lives under `docs/`.
+- Do not create top-level `.ai/`.
+- Do not create top-level `.codex/`.
+
 Recommended structure:
 
 ```text
@@ -57,6 +64,7 @@ docs/
 - makes the knowledge base browsable by module
 - supports many short sessions instead of one giant session
 - keeps design docs separate from current execution status
+- prevents hidden top-level agent folders from competing with the main docs tree
 
 ## Profile Notes
 

@@ -8,6 +8,17 @@ It follows the OpenAI-aligned pattern:
 - structured knowledge lives under `docs/`,
 - agents read a small table of contents first and only pull deeper docs as needed.
 
+## Mandatory Framework Constraints
+
+Repositories using this framework must follow these constraints:
+
+- keep `AGENTS.md` at the repository root
+- keep durable knowledge inside `docs/`
+- do not use top-level `.ai/`
+- do not use top-level `.codex/`
+
+Inside `docs/`, this kit currently uses `docs/ai/` as the AI-facing knowledge layer. The mandatory part is that the knowledge stays under `docs/`, not in hidden top-level agent folders.
+
 ## What This Kit Contains
 
 - `README.md`: usage guide for the kit
@@ -166,3 +177,4 @@ docs/operations/session-handoff.md
 - Keep only the docs that stay useful.
 - If a repo is very small, the same structure still works with fewer files.
 - The main success criterion is that future sessions can read less, not that every possible template exists on day one.
+- If adopting this kit teaches you something, open a GitHub issue in `Team-Cyan/harness-agent-kit` so the next repo can benefit from the same lesson.
