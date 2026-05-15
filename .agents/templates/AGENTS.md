@@ -7,6 +7,7 @@ Keep this file short. Treat it as a table of contents, not the full knowledge ba
 Framework constraints:
 
 - keep this file at repository root
+- use `.agents/` for repo-local agent assets and reusable templates
 - keep durable knowledge under `docs/`
 - do not create top-level `.ai/`
 - do not create top-level `.codex/`
@@ -26,6 +27,7 @@ Do not start by reading every spec or every plan.
 ## Repository Model
 
 - `AGENTS.md`: thin agent entrypoint
+- `.agents/`: repo-local agent assets, reusable prompts, and templates
 - `docs/ai/`: reusable AI knowledge base
 - `docs/roadmap.md`: current project state and next work
 - `docs/operations/`: operator workflows and handoff notes
@@ -38,6 +40,7 @@ Do not start by reading every spec or every plan.
 - Reply to the human user in their preferred language.
 - Prefer small, well-bounded sessions.
 - Work on one module or one roadmap item at a time.
+- Keep `.agents/` thin; keep durable knowledge in `docs/`.
 - Update the most relevant module doc and `docs/roadmap.md` when project state materially changes.
 
 ## Safety
@@ -53,6 +56,7 @@ Do not start by reading every spec or every plan.
 ## Useful Docs
 
 - `docs/ai/project-overview.md`
+- `.agents/README.md`
 - `docs/ai/harness-workflow.md`
 - `docs/ai/reference-repos.md`
 - `docs/ai/modules/*.md`

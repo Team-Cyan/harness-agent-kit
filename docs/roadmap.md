@@ -6,10 +6,12 @@
 - imported `repo-init-kit`
 - added root `AGENTS.md`
 - added base `README.md`
+- adopted `.agents/` plus `docs/` as the repo management shape
+- moved reusable starter templates into `.agents/templates/`
 
 ## In Progress
 
-- none
+- keep docs and bootstrap behavior aligned with the `.agents/` asset layer
 
 ## Next
 

@@ -5,6 +5,7 @@ This directory is a reusable repo-initialization kit for agent-first projects.
 It follows the OpenAI-aligned pattern:
 
 - root `AGENTS.md` stays short,
+- `.agents/` holds repo-local agent assets and starter templates,
 - structured knowledge lives under `docs/`,
 - agents read a small table of contents first and only pull deeper docs as needed.
 
@@ -13,18 +14,19 @@ It follows the OpenAI-aligned pattern:
 Repositories using this framework must follow these constraints:
 
 - keep `AGENTS.md` at the repository root
+- use `.agents/` for repo-local agent assets and reusable templates
 - keep durable knowledge inside `docs/`
 - do not use top-level `.ai/`
 - do not use top-level `.codex/`
 
-Inside `docs/`, this kit currently uses `docs/ai/` as the AI-facing knowledge layer. The mandatory part is that the knowledge stays under `docs/`, not in hidden top-level agent folders.
+Inside `docs/`, this kit currently uses `docs/ai/` as the AI-facing knowledge layer. `.agents/` is reserved for assets that help agents start or bootstrap work; it should not become a second durable knowledge base.
 
 ## What This Kit Contains
 
 - `README.md`: usage guide for the kit
 - `path-architecture.md`: recommended docs layout
 - `bootstrap-checklist.md`: step-by-step initialization checklist
-- `templates/`: minimal reusable templates
+- `.agents/templates/`: minimal reusable templates copied into target paths
 
 ## Adoption Modes
 
@@ -33,6 +35,7 @@ Inside `docs/`, this kit currently uses `docs/ai/` as the AI-facing knowledge la
 Use this when a repo is still small or early:
 
 - `AGENTS.md`
+- `.agents/README.md`
 - `docs/ai/project-overview.md`
 - `docs/roadmap.md`
 - `docs/ai/modules/<one-or-two>.md`
@@ -116,23 +119,25 @@ Recommended bias:
 
 Copy these first:
 
-1. `templates/AGENTS.md` -> `AGENTS.md`
-2. `templates/project-overview.md` -> `docs/ai/project-overview.md`
-3. `templates/roadmap.md` -> `docs/roadmap.md`
-4. `templates/module-doc.md` -> `docs/ai/modules/<module-name>.md`
+1. `.agents/templates/AGENTS.md` -> `AGENTS.md`
+2. `.agents/templates/agent-assets.md` -> `.agents/README.md`
+3. `.agents/templates/project-overview.md` -> `docs/ai/project-overview.md`
+4. `.agents/templates/roadmap.md` -> `docs/roadmap.md`
+5. `.agents/templates/module-doc.md` -> `docs/ai/modules/<module-name>.md`
 
 Then add, as needed:
 
-5. `templates/reference-repos.md` -> `docs/ai/reference-repos.md`
-6. `templates/harness-workflow.md` -> `docs/ai/harness-workflow.md`
-7. `templates/delivery-checklist.md` -> `docs/ai/templates/delivery-checklist.md`
-8. `templates/session-handoff.md` -> `docs/operations/session-handoff.md`
+6. `.agents/templates/reference-repos.md` -> `docs/ai/reference-repos.md`
+7. `.agents/templates/harness-workflow.md` -> `docs/ai/harness-workflow.md`
+8. `.agents/templates/delivery-checklist.md` -> `docs/ai/templates/delivery-checklist.md`
+9. `.agents/templates/session-handoff.md` -> `docs/operations/session-handoff.md`
 
 ## Intended Outcome
 
 After applying this kit to a repository, the project should have:
 
 - a thin root `AGENTS.md`,
+- a `.agents/` asset layer,
 - a `docs/ai/` knowledge base,
 - a current `docs/roadmap.md`,
 - reusable module docs and session templates,
@@ -140,7 +145,7 @@ After applying this kit to a repository, the project should have:
 
 ## Suggested Adoption Order
 
-1. Copy `templates/AGENTS.md`
+1. Copy `.agents/templates/AGENTS.md`
 2. Create the recommended `docs/` structure from `path-architecture.md`
 3. Copy the minimum template set:
    - `project-overview.md`
@@ -156,6 +161,7 @@ If you want a concrete copy plan for a new repo:
 
 ```text
 AGENTS.md
+.agents/README.md
 docs/ai/project-overview.md
 docs/roadmap.md
 docs/ai/modules/<module>.md

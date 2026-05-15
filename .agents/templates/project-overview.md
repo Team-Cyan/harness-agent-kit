@@ -22,6 +22,7 @@ Summarize the major loops or subsystems.
 ## Documentation Strategy
 
 - root `AGENTS.md` for entry routing
+- `.agents/` for repo-local agent assets and reusable templates
 - `docs/ai/` for reusable knowledge
 - `docs/roadmap.md` for current state
 - `docs/specs/` for durable design decisions

@@ -13,6 +13,7 @@ Use that choice to decide how much of the kit to apply on day one.
 ## Phase 1: Thin Entrypoint
 
 - [ ] Add root `AGENTS.md`
+- [ ] Add `.agents/README.md`
 - [ ] Add `docs/ai/project-overview.md`
 - [ ] Add `docs/roadmap.md`
 - [ ] Confirm there is no top-level `.ai/`
@@ -23,6 +24,7 @@ Use that choice to decide how much of the kit to apply on day one.
 - [ ] Add `docs/ai/reference-repos.md`
 - [ ] Add `docs/ai/modules/` with at least one module doc
 - [ ] Add `docs/ai/templates/`
+- [ ] Keep reusable starter files in `.agents/templates/`
 
 ## Phase 3: Multi-Session Support
 
@@ -41,6 +43,7 @@ Use that choice to decide how much of the kit to apply on day one.
 
 - [ ] Keep AI-facing docs in English
 - [ ] Keep durable knowledge inside `docs/`
+- [ ] Keep `.agents/` limited to agent assets and copyable starter files
 - [ ] Organize by module
 - [ ] Keep roadmap separate from specs and plans
 - [ ] Record external references with notes on what to borrow and what not to copy

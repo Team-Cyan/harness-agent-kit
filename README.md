@@ -5,6 +5,7 @@
 It packages an OpenAI-aligned structure:
 
 - a thin root `AGENTS.md`,
+- a repo-local `.agents/` asset layer,
 - a structured `docs/` knowledge base,
 - reusable repo-init templates,
 - a workflow shape optimized for many small, focused agent sessions.
@@ -15,6 +16,7 @@ When a repository adopts this framework:
 
 - use the `docs/` folder structure as the durable knowledge base
 - keep `AGENTS.md` at the repository root
+- use `.agents/` for repo-local agent assets and copyable templates
 - do not use top-level `.ai/`
 - do not use top-level `.codex/`
 
@@ -31,6 +33,7 @@ Many repos either have:
 This kit exists to make the good default cheap:
 
 - short root entrypoint,
+- `.agents/` for reusable agent assets instead of hidden knowledge,
 - structured docs as the system of record,
 - roadmap and handoff discipline,
 - small-session-friendly module docs.
@@ -38,6 +41,7 @@ This kit exists to make the good default cheap:
 ## What You Get
 
 - root `AGENTS.md` pattern
+- `.agents/` asset and template layer
 - `docs/`-first knowledge-base structure
 - `docs/roadmap.md` shape
 - `docs/operations/session-handoff.md` shape
@@ -71,6 +75,7 @@ scripts/bootstrap-repo.sh /path/to/target-repo
 What it copies by default:
 
 - `AGENTS.md`
+- `.agents/README.md`
 - `docs/ai/project-overview.md`
 - `docs/roadmap.md`
 - `docs/ai/reference-repos.md`
@@ -80,6 +85,7 @@ What it copies by default:
 
 It also creates the basic directory structure:
 
+- `.agents/`
 - `docs/ai/modules/`
 - `docs/ai/templates/`
 - `docs/operations/`
@@ -88,6 +94,7 @@ It also creates the basic directory structure:
 
 ## Main Contents
 
+- `.agents/`: repo-local agent assets and reusable templates
 - `docs/ai/repo-init-kit/`: the reusable kit
 - `docs/ai/`: this repo's own AI knowledge base
 - `docs/operations/`: session handoff
@@ -97,6 +104,7 @@ It also creates the basic directory structure:
 
 - keep the root entrypoint short
 - move durable knowledge into `docs/`
+- keep reusable agent assets in `.agents/`
 - optimize for future narrow sessions
 - prefer copyable conventions over heavyweight framework machinery
 

@@ -1,6 +1,10 @@
 # Docs Index
 
-## Layout
+## Repository Layout
+
+- `.agents/`
+  - repo-local agent assets and reusable starter templates
+  - not a durable knowledge base
 
 - `docs/ai/`
   - reusable AI knowledge for this repo

@@ -18,6 +18,7 @@ Do not start by reading every spec or every plan.
 ## Repository Model
 
 - `AGENTS.md`: thin agent entrypoint
+- `.agents/`: repo-local agent assets and reusable templates
 - `docs/ai/`: reusable AI knowledge base
 - `docs/roadmap.md`: current repo state and next work
 - `docs/operations/`: operator workflows and handoff notes
@@ -28,6 +29,7 @@ Do not start by reading every spec or every plan.
 - Reply to the human user in their preferred language.
 - Prefer small, well-bounded sessions.
 - Keep this repository focused on reusable harness and repo-init assets.
+- Keep `.agents/` for copyable agent assets; keep durable knowledge in `docs/`.
 - Update `docs/roadmap.md` when the kit meaningfully changes.
 
 ## Safety
@@ -39,5 +41,6 @@ Do not start by reading every spec or every plan.
 ## Useful Docs
 
 - `docs/ai/project-overview.md`
+- `.agents/README.md`
 - `docs/ai/repo-init-kit/README.md`
 - `docs/roadmap.md`

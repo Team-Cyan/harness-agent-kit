@@ -7,7 +7,7 @@
 It is:
 
 - a docs-first bootstrap kit,
-- a reusable structure for `AGENTS.md` plus `docs/`,
+- a reusable structure for root `AGENTS.md`, `.agents/`, and `docs/`,
 - a place to refine patterns for small, focused agent sessions.
 
 It is not:
@@ -21,12 +21,14 @@ It is not:
 This repo contains:
 
 - a thin root `AGENTS.md`,
+- a repo-local `.agents/` folder for agent assets and starter templates,
 - a structured docs layout,
-- reusable templates under `docs/ai/repo-init-kit/`.
+- reusable kit guidance under `docs/ai/repo-init-kit/`.
 
 ## Documentation Strategy
 
 - root `AGENTS.md` for agent entry routing
+- `.agents/` for copyable agent-facing assets
 - `docs/ai/` for reusable AI session knowledge
 - `docs/roadmap.md` for current state
 - `docs/operations/` for handoff notes

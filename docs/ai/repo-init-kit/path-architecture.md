@@ -3,6 +3,7 @@
 ## Mandatory Rules
 
 - `AGENTS.md` lives at the repository root.
+- `.agents/` is allowed for repo-local agent assets and starter templates.
 - Durable agent knowledge lives under `docs/`.
 - Do not create top-level `.ai/`.
 - Do not create top-level `.codex/`.
@@ -12,6 +13,8 @@ Recommended structure:
 ```text
 AGENTS.md
 README.md
+.agents/
+└── README.md
 docs/
 ├── ai/
 │   ├── project-overview.md
@@ -21,8 +24,6 @@ docs/
 │   │   ├── <module-a>.md
 │   │   └── <module-b>.md
 │   └── templates/
-│       ├── session-template.md
-│       ├── task-template.md
 │       └── delivery-checklist.md
 ├── roadmap.md
 ├── operations/
@@ -39,6 +40,12 @@ docs/
   - short entrypoint for agents
   - read order
   - a few high-signal repo rules
+
+- `.agents/`
+  - repo-local agent assets
+  - optional local templates, reusable prompts, or routing helpers
+  - not a second knowledge base
+  - target `.agents/README.md` should stay thin
 
 - `docs/ai/`
   - reusable knowledge base for any agent or tool
@@ -64,7 +71,13 @@ docs/
 - makes the knowledge base browsable by module
 - supports many short sessions instead of one giant session
 - keeps design docs separate from current execution status
-- prevents hidden top-level agent folders from competing with the main docs tree
+- lets `.agents/` hold agent assets without competing with the main docs tree
+- prevents hidden `.ai/` and `.codex/` folders from becoming parallel knowledge bases
+
+## Kit Source Templates
+
+In `harness-agent-kit` itself, reusable starter templates live under `.agents/templates/`.
+The bootstrap script copies those templates into their target paths, such as `AGENTS.md`, `.agents/README.md`, and `docs/ai/project-overview.md`.
 
 ## Profile Notes
 
@@ -73,6 +86,7 @@ docs/
 Often enough:
 
 - `AGENTS.md`
+- `.agents/README.md`
 - `docs/ai/project-overview.md`
 - `docs/roadmap.md`
 - a few module docs
